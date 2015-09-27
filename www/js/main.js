@@ -58,9 +58,15 @@ function onSuccess(imageURI)
 
 var win = function (r) {
     console.log("Code = " + r.responseCode);
-    console.log("Response = " + r.response);
+    var responder = JSON.parse(r.response);
+    console.log("Response = " + responder);
+    console.log("Response = " + responder.url);
     console.log("Sent = " + r.bytesSent);
-    httpGetAsync("/totem/upload",r.response.url);
+    var d = "https://totempass.herokuapp.com/totem/upload";
+    if(type == 0){
+        d = "https://totempass.herokuapp.com/totem/initialize";
+    }
+    httpGetAsync(d,responder.url);
 };
 
 var fail = function (error) {
@@ -69,14 +75,15 @@ var fail = function (error) {
     console.log("upload error target " + error.target);
 }; 
 
-function httpGetAsync(theUrl, imgUrl, callback)
+function httpGetAsync(theUrl, imgUrl)
 {
     theUrl +='?url=' + imgUrl;
     
     var xmlHttp = new XMLHttpRequest();
     xmlHttp.onreadystatechange = function() { 
         if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
-            callback(xmlHttp.responseText);
+            console.log(xmlHttp.responseText);
+            alert(xmlHttp.responseText);
     };
     xmlHttp.open("GET", theUrl, true); // true for asynchronous 
     xmlHttp.send(null);

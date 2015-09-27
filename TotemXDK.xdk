@@ -5,7 +5,7 @@
       "projectTypeName": "com.intel.xdk.projecttype.jsapp",
       "src": "jsapp/sample-image-capture/sample.zip",
       "projectGuid": "90de440e-ce99-4c95-8574-58b748841a11",
-      "lastModifiedDate": 1443336064599,
+      "lastModifiedDate": 1443352095791,
       "creationDate": 1443322561963
     },
     "sourceDirectory": "www",
@@ -158,16 +158,17 @@
           "android-installLocation": "auto",
           "Fullscreen": true
         },
-        "isActive_": false,
+        "isActive_": true,
         "appName_": "TotemXDK",
         "appID_": "xdk.sample.cameracapture",
         "appAccess_": {
-          "mode": "legacy",
+          "mode": "whitelist",
           "network": [
-            "http://debug-software.intel.com/*",
-            "https://debug-software.intel.com/*"
+            "*"
           ],
-          "intents": [],
+          "intents": [
+            "*"
+          ],
           "navigation": []
         },
         "icons_": [],
@@ -192,19 +193,20 @@
           "android-installLocation": "auto",
           "Fullscreen": true
         },
-        "isActive_": true,
+        "isActive_": false,
         "appName_": "TotemXDK",
         "appID_": "xdk.sample.cameracapture",
         "appAccess_": {
           "mode": "whitelist",
           "network": [
-            "http://debug-software.intel.com/*",
-            "https://debug-software.intel.com/*"
+            "*"
           ],
           "intents": [
-            "http://*"
+            "*"
           ],
-          "navigation": []
+          "navigation": [
+            "<access origin=\"*\" />"
+          ]
         },
         "icons_": [],
         "splashes_": [],
