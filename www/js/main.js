@@ -25,7 +25,7 @@ var preventDefaultScroll = function(event)
 };
     
 window.document.addEventListener("touchmove", preventDefaultScroll, false);
-
+//
 /**
  * Device Ready Code 
 */
