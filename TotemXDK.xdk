@@ -5,7 +5,7 @@
       "projectTypeName": "com.intel.xdk.projecttype.jsapp",
       "src": "jsapp/sample-image-capture/sample.zip",
       "projectGuid": "90de440e-ce99-4c95-8574-58b748841a11",
-      "lastModifiedDate": 1443322568889,
+      "lastModifiedDate": 1443336064599,
       "creationDate": 1443322561963
     },
     "sourceDirectory": "www",
@@ -95,6 +95,54 @@
         "name": "Camera",
         "description": "Cordova Camera Plugin",
         "checksum": "d90b11fa"
+      },
+      {
+        "id": "cordova-plugin-file",
+        "name": "File",
+        "version": "2.1.0",
+        "originType": "cordova.io",
+        "origin": "cordova-plugin-file",
+        "gitref": "",
+        "paramvals": {},
+        "sourceLocation": "plugins/cordova-plugin-file",
+        "selectedState": "Included",
+        "checksum": "a32414d6",
+        "dependsOn": [],
+        "topLevel": false,
+        "permissions": {
+          "android:name": [
+            "android.permission.WRITE_EXTERNAL_STORAGE"
+          ]
+        },
+        "description": "Cordova File Plugin",
+        "data": {},
+        "dependedBy": [
+          "cordova-plugin-file-transfer"
+        ]
+      },
+      {
+        "id": "cordova-plugin-file-transfer",
+        "name": "File Transfer",
+        "version": "1.2.1",
+        "originType": "cordova.io",
+        "origin": "cordova-plugin-file-transfer",
+        "gitref": "",
+        "paramvals": {},
+        "sourceLocation": "plugins/cordova-plugin-file-transfer",
+        "selectedState": "Included",
+        "checksum": "a9e2633",
+        "dependsOn": [
+          "cordova-plugin-file"
+        ],
+        "topLevel": true,
+        "permissions": {
+          "android:name": [
+            "android.permission.WRITE_EXTERNAL_STORAGE"
+          ]
+        },
+        "description": "Cordova File Transfer Plugin",
+        "data": {},
+        "dependedBy": []
       }
     ],
     "serviceMethods": [],
@@ -107,9 +155,10 @@
           "Orientation": "portrait",
           "android-minSdkVersion": "14",
           "android-targetSdkVersion": "19",
-          "android-installLocation": "auto"
+          "android-installLocation": "auto",
+          "Fullscreen": true
         },
-        "isActive_": true,
+        "isActive_": false,
         "appName_": "TotemXDK",
         "appID_": "xdk.sample.cameracapture",
         "appAccess_": {
@@ -126,7 +175,7 @@
         "addlPermissions_": "",
         "excludedLibraries_": "",
         "cordovaCLIVersion_": "5.1.1",
-        "crosswalkVersion_": "14",
+        "crosswalkVersion_": "15",
         "appAuthor_": "Intel XDK",
         "appVersion_": "0.0.1",
         "appDescription_": "This demonstration illustrates how to use the camera features of hybrid apps.",
@@ -140,18 +189,21 @@
           "Orientation": "portrait",
           "android-minSdkVersion": "14",
           "android-targetSdkVersion": "19",
-          "android-installLocation": "auto"
+          "android-installLocation": "auto",
+          "Fullscreen": true
         },
         "isActive_": true,
         "appName_": "TotemXDK",
         "appID_": "xdk.sample.cameracapture",
         "appAccess_": {
-          "mode": "legacy",
+          "mode": "whitelist",
           "network": [
             "http://debug-software.intel.com/*",
             "https://debug-software.intel.com/*"
           ],
-          "intents": [],
+          "intents": [
+            "http://*"
+          ],
           "navigation": []
         },
         "icons_": [],
@@ -174,7 +226,7 @@
           "Orientation": "portrait",
           "ios-configuration": "adhoc"
         },
-        "isActive_": true,
+        "isActive_": false,
         "appName_": "TotemXDK",
         "appID_": "xdk.sample.cameracapture",
         "appAccess_": {
@@ -204,7 +256,7 @@
         "preferences_": {
           "Orientation": "portrait"
         },
-        "isActive_": true,
+        "isActive_": false,
         "appName_": "TotemXDK",
         "appID_": "xdk.sample.cameracapture",
         "appAccess_": {
