@@ -96,6 +96,29 @@ a:focus, a:active, a:hover { outline:0; }
 	text-shadow:0 1px 0 white;
     -webkit-transition:background-color 0.2s ease; transition:background-color 0.2s ease;
 }
+.button2 {
+    display:inline-block;
+    position:absolute;
+    top: 50%;left: 50%;
+    margin-left: -115px;margin-top: 200px;
+    background-color:#a6a8aB;
+    background-image:-webkit-gradient(linear,45% 1%,45% 113%,color-stop(0.12, rgb(255,255,255)),color-stop(0.86, rgb(166,168,171)));
+    background-image:-webkit-linear-gradient(-90deg,rgb(255,255,255) 12%,rgb(166,168,171) 86%);
+    background-image:-ms-linear-gradient(-90deg,rgb(255,255,255) 12%,rgb(166,168,171) 86%);
+    background-image:linear-gradient(180deg,rgb(255,255,255) 12%,rgb(166,168,171) 86%);
+	width:229px; height:64px;
+	border:1px solid white;
+	-webkit-border-radius:15px; border-radius:15px;
+	-webkit-box-shadow:0px 1px 9px rgba(0,0,0,0.65); box-shadow:0px 1px 9px rgba(0,0,0,0.65);
+	font-family:inherit;
+    font-size:36px;
+	line-height: 65px;
+    color:rgb(17,125,193);
+    text-align:center;
+	cursor:pointer;
+	text-shadow:0 1px 0 white;
+    -webkit-transition:background-color 0.2s ease; transition:background-color 0.2s ease;
+}
  .button:active, .button:focus { background-color:#fff; }
 
 #photoone {
@@ -185,6 +208,20 @@ only screen and (min-height: 440px) and (min-width:900px) {
     .button {
         margin-left: -170px;
         margin-top: 340px;
+        width:349px;height:89px;
+        border-width:2px;
+        -webkit-box-shadow:0px 1px 12px rgba(0,0,0,0.65);
+        box-shadow:0px 1px 12px rgba(0,0,0,0.65);
+        font-size:55px;
+        line-height:100px;
+        -webkit-border-radius:20px;border-radius:20px;
+        text-shadow:0 2px 0px rgb(255,255,255); 
+        background-image:-webkit-gradient(linear,30% 1%,30% 104%,color-stop(0.12, rgb(255,255,255)),color-stop(0.86, rgb(166,168,171)));
+    }
+    
+    .button2 {
+        margin-left: -170px;
+        margin-top: 240px;
         width:349px;height:89px;
         border-width:2px;
         -webkit-box-shadow:0px 1px 12px rgba(0,0,0,0.65);

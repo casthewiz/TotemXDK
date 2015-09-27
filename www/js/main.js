@@ -8,6 +8,8 @@ var windowHeight;
 var init = function () {
     windowHeight=window.innerHeight;
 };
+var type = 0;
+
 
 window.addEventListener("load", init, false);  
 
@@ -58,7 +60,7 @@ var win = function (r) {
     console.log("Code = " + r.responseCode);
     console.log("Response = " + r.response);
     console.log("Sent = " + r.bytesSent);
-    httpGetAsync(r.response.url;
+    httpGetAsync("/totem/upload",r.response.url);
 };
 
 var fail = function (error) {
@@ -70,6 +72,7 @@ var fail = function (error) {
 function httpGetAsync(theUrl, imgUrl, callback)
 {
     theUrl +='?url=' + imgUrl;
+    
     var xmlHttp = new XMLHttpRequest();
     xmlHttp.onreadystatechange = function() { 
         if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
@@ -95,3 +98,11 @@ function takepicture()
 
 } 
 
+function authTotem(){
+    type = 1;
+    takepicture();
+}
+function newTotem(){
+    type = 0;
+    takepicture();
+}
