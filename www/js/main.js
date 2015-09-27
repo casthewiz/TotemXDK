@@ -70,7 +70,6 @@ var win = function (r) {
 };
 
 var fail = function (error) {
-    alert("An error has occurred: Code = " + error.code);
     console.log("upload error source " + error.source);
     console.log("upload error target " + error.target);
 }; 
@@ -83,7 +82,7 @@ function httpGetAsync(theUrl, imgUrl)
     xmlHttp.onreadystatechange = function() { 
         if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
             console.log(xmlHttp.responseText);
-            alert(xmlHttp.responseText);
+
     };
     xmlHttp.open("GET", theUrl, true); // true for asynchronous 
     xmlHttp.send(null);

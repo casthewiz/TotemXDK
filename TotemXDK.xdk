@@ -5,7 +5,7 @@
       "projectTypeName": "com.intel.xdk.projecttype.jsapp",
       "src": "jsapp/sample-image-capture/sample.zip",
       "projectGuid": "90de440e-ce99-4c95-8574-58b748841a11",
-      "lastModifiedDate": 1443352095791,
+      "lastModifiedDate": 1443354981825,
       "creationDate": 1443322561963
     },
     "sourceDirectory": "www",
@@ -24,11 +24,11 @@
     "libraries": [],
     "cordovaPlugins": [
       {
-        "id": "cordova-plugin-statusbar",
+        "id": "org.apache.cordova.statusbar",
         "name": "StatusBar",
-        "version": "1.0.0",
+        "version": "0.1.9",
         "originType": "cordova.io",
-        "origin": "cordova-plugin-statusbar",
+        "origin": "org.apache.cordova.statusbar",
         "gitref": "",
         "paramvals": {},
         "selectedState": "Included",
@@ -39,52 +39,52 @@
         "description": "Cordova StatusBar Plugin",
         "data": {},
         "dependedBy": [],
-        "checksum": "b4e7aac6"
+        "checksum": "988c20e2"
       },
       {
-        "id": "cordova-plugin-splashscreen",
-        "version": "2.1.0",
+        "id": "org.apache.cordova.splashscreen",
+        "version": "0.3.5",
         "selectedState": "Included",
         "data": {},
         "paramvals": {},
         "dependsOn": [],
         "dependedBy": [],
         "originType": "cordova.io",
-        "origin": "cordova-plugin-splashscreen",
+        "origin": "org.apache.cordova.splashscreen",
         "permissions": {},
         "topLevel": true,
         "gitref": "",
         "name": "Splashscreen",
         "description": "Cordova Splashscreen Plugin",
-        "checksum": "170efb68"
+        "checksum": "271836cf"
       },
       {
-        "id": "cordova-plugin-device",
-        "version": "1.0.1",
+        "id": "org.apache.cordova.device",
+        "version": "0.2.13",
         "selectedState": "Included",
         "data": {},
         "paramvals": {},
         "dependsOn": [],
         "dependedBy": [],
         "originType": "cordova.io",
-        "origin": "cordova-plugin-device",
+        "origin": "org.apache.cordova.device",
         "permissions": {},
         "topLevel": true,
         "gitref": "",
         "name": "Device",
         "description": "Cordova Device Plugin",
-        "checksum": "adfc61ba"
+        "checksum": "89f19435"
       },
       {
-        "id": "cordova-plugin-camera",
-        "version": "1.2.0",
+        "id": "org.apache.cordova.camera",
+        "version": "0.3.4",
         "selectedState": "Included",
         "data": {},
         "paramvals": {},
         "dependsOn": [],
         "dependedBy": [],
         "originType": "cordova.io",
-        "origin": "cordova-plugin-camera",
+        "origin": "org.apache.cordova.camera",
         "permissions": {
           "android:name": [
             "android.permission.WRITE_EXTERNAL_STORAGE"
@@ -94,19 +94,19 @@
         "gitref": "",
         "name": "Camera",
         "description": "Cordova Camera Plugin",
-        "checksum": "d90b11fa"
+        "checksum": "22988c6a"
       },
       {
-        "id": "cordova-plugin-file",
+        "id": "org.apache.cordova.file",
         "name": "File",
-        "version": "2.1.0",
+        "version": "1.3.2",
         "originType": "cordova.io",
-        "origin": "cordova-plugin-file",
+        "origin": "org.apache.cordova.file",
         "gitref": "",
         "paramvals": {},
         "sourceLocation": "plugins/cordova-plugin-file",
         "selectedState": "Included",
-        "checksum": "a32414d6",
+        "checksum": "cfd4805c",
         "dependsOn": [],
         "topLevel": false,
         "permissions": {
@@ -121,16 +121,16 @@
         ]
       },
       {
-        "id": "cordova-plugin-file-transfer",
+        "id": "org.apache.cordova.file-transfer",
         "name": "File Transfer",
-        "version": "1.2.1",
+        "version": "0.4.8",
         "originType": "cordova.io",
-        "origin": "cordova-plugin-file-transfer",
+        "origin": "org.apache.cordova.file-transfer",
         "gitref": "",
         "paramvals": {},
         "sourceLocation": "plugins/cordova-plugin-file-transfer",
         "selectedState": "Included",
-        "checksum": "a9e2633",
+        "checksum": "5a21646d",
         "dependsOn": [
           "cordova-plugin-file"
         ],
@@ -162,7 +162,7 @@
         "appName_": "TotemXDK",
         "appID_": "xdk.sample.cameracapture",
         "appAccess_": {
-          "mode": "whitelist",
+          "mode": "legacy",
           "network": [
             "*"
           ],
@@ -175,8 +175,8 @@
         "splashes_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
-        "cordovaCLIVersion_": "5.1.1",
-        "crosswalkVersion_": "15",
+        "cordovaCLIVersion_": "4.1.2",
+        "crosswalkVersion_": "14",
         "appAuthor_": "Intel XDK",
         "appVersion_": "0.0.1",
         "appDescription_": "This demonstration illustrates how to use the camera features of hybrid apps.",
@@ -197,7 +197,7 @@
         "appName_": "TotemXDK",
         "appID_": "xdk.sample.cameracapture",
         "appAccess_": {
-          "mode": "whitelist",
+          "mode": "legacy",
           "network": [
             "*"
           ],
@@ -212,7 +212,7 @@
         "splashes_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
-        "cordovaCLIVersion_": "5.1.1",
+        "cordovaCLIVersion_": "4.1.2",
         "crosswalkVersion_": "14",
         "appVersion_": "0.0.1",
         "appAuthor_": "Intel XDK",
@@ -245,7 +245,7 @@
         "addlPermissions_": "",
         "excludedLibraries_": "",
         "iosProvs_": [],
-        "cordovaCLIVersion_": "5.1.1",
+        "cordovaCLIVersion_": "4.1.2",
         "crosswalkVersion_": "14",
         "appAuthor_": "Intel XDK",
         "appVersion_": "0.0.1",
@@ -275,7 +275,7 @@
         "addlPermissions_": "",
         "excludedLibraries_": "",
         "appAuthor_": "Intel XDK",
-        "cordovaCLIVersion_": "5.1.1",
+        "cordovaCLIVersion_": "4.1.2",
         "crosswalkVersion_": "14",
         "appVersion_": "0.0.0.1",
         "appDescription_": "This demonstration illustrates how to use the camera features of hybrid apps."
@@ -398,7 +398,7 @@
         "addlPermissions_": "",
         "excludedLibraries_": "",
         "appVersion_": "0.0.0.1",
-        "cordovaCLIVersion_": "5.1.1",
+        "cordovaCLIVersion_": "4.1.2",
         "appAuthor_": "Intel XDK"
       }
     },
