@@ -125,11 +125,11 @@ a:focus, a:active, a:hover { outline:0; }
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-top: -180px;
-    margin-left: -80px;
+    margin-top: -160px;
+    margin-left: -90px;
     border-width:0px;
-    width: 160px;
-    height: 212px;   
+    width: 180px;
+    height: 180x;   
 }
 
 #imagecontent {
